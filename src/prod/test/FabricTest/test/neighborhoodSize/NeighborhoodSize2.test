@@ -1,0 +1,396 @@
+votes 10 20 30
+
+set fmservice 1 1
+set cmservice 1 1
+set NeighborhoodSize 2
+
+
+cleantest
+
++10
++20
++30
++40
++50
++60
++70
++80
++90
++100
++110
++120
++130
++140
++150
++160
++170
++180
++190
++200
++210
++220
++230
++240
++250
++260
++270
++280
++290
++300
++310
++320
++330
++340
++350
++360
++370
++380
++390
++400
++410
++420
++430
++440
++450
++460
++470
++480
++490
++500
+
+verify
+queryhealth service servicename=fabric:/servicethatgetsmisplaced  expectedhealthstate=ok
+
+!pause 300
+
+-180
+verify
++180
+verify
+!pause 50
+
+
+-480
+verify
++480
+verify
+!pause 50
+
+
+-430
+verify
++430
+verify
+!pause 50
+
+
+-90
+verify
++90
+verify
+!pause 50
+
+
+-170
+verify
++170
+verify
+!pause 50
+
+
+-490
+verify
++490
+verify
+!pause 50
+
+
+-350
+verify
++350
+verify
+!pause 50
+
+
+-460
+verify
++460
+verify
+!pause 50
+
+
+-310
+verify
++310
+verify
+!pause 50
+
+
+-270
+verify
++270
+verify
+!pause 50
+
+
+-400
+verify
++400
+verify
+!pause 50
+
+
+-260
+verify
++260
+verify
+!pause 50
+
+
+-110
+verify
++110
+verify
+!pause 50
+
+
+-130
+verify
++130
+verify
+!pause 50
+
+
+-370
+verify
++370
+verify
+!pause 50
+
+
+-290
+verify
++290
+verify
+!pause 50
+
+
+-240
+verify
++240
+verify
+!pause 50
+
+
+-140
+verify
++140
+verify
+!pause 50
+
+
+-280
+verify
++280
+verify
+!pause 50
+
+
+-200
+verify
++200
+verify
+!pause 50
+
+
+-60
+verify
++60
+verify
+!pause 50
+
+
+-100
+verify
++100
+verify
+!pause 50
+
+
+-500
+verify
++500
+verify
+!pause 50
+
+
+-320
+verify
++320
+verify
+!pause 50
+
+
+-40
+verify
++40
+verify
+!pause 50
+
+
+-120
+verify
++120
+verify
+!pause 50
+
+
+-440
+verify
++440
+verify
+!pause 50
+
+
+-450
+verify
++450
+verify
+!pause 50
+
+
+-80
+verify
++80
+verify
+!pause 50
+
+
+-410
+verify
++410
+verify
+!pause 50
+
+
+-50
+verify
++50
+verify
+!pause 50
+
+
+-70
+verify
++70
+verify
+!pause 50
+
+
+-160
+verify
++160
+verify
+!pause 50
+
+
+-380
+verify
++380
+verify
+!pause 50
+
+
+-230
+verify
++230
+verify
+!pause 50
+
+
+-210
+verify
++210
+verify
+!pause 50
+
+
+-340
+verify
++340
+verify
+!pause 50
+
+
+-360
+verify
++360
+verify
+!pause 50
+
+
+-470
+verify
++470
+verify
+!pause 50
+
+
+-220
+verify
++220
+verify
+!pause 50
+
+
+-150
+verify
++150
+verify
+!pause 50
+
+
+-300
+verify
++300
+verify
+!pause 50
+
+
+-420
+verify
++420
+verify
+!pause 50
+
+
+-390
+verify
++390
+verify
+!pause 50
+
+
+-250
+verify
++250
+verify
+!pause 50
+
+
+-190
+verify
++190
+!pause 50
+
+-330
+verify
++330
+verify
+!pause 50
+
+
+verify
+queryhealth service servicename=fabric:/servicethatgetsmisplaced  expectedhealthstate=ok
+
+!q
